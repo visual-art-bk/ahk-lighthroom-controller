@@ -1,0 +1,1 @@
+﻿Run "C:\Windows\notepad.exe"

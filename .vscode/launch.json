@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "autohotkey",        // AutoHotkey Debug Adapter 타입
+            "request": "launch",         // 실행 요청 유형 (launch)
+            "name": "Run AutoHotkey",    // 디버그 설정 이름
+            "runtime": "C:/Program Files/AutoHotkey/v2/AutoHotkey64.exe", // AutoHotkey 실행 파일 경로
+            "program": "${workspaceFolder}/src/LightroomMenu.ahk", // 실행할 AHK 스크립트
+            "stopOnEntry": true,         // 디버깅 시작 시 첫 줄에서 멈춤
+            "runtimeArgs": ["/ErrorStdOut"], // 실행 시 추가 옵션
+            "args": [],                  // 스크립트에 전달할 인수 (필요 시 추가)
+            "env": {},                   // 디버깅 시 설정할 환경 변수
+            "cwd": "${workspaceFolder}"  // 현재 작업 디렉터리 설정
+        }
+    ]
+}
